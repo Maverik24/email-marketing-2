@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing Services for Fitness Professionals</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary: #4A90E2;
+            --secondary: #2ECC71;
+            --accent: #9B59B6;
+            --text: #2C3E50;
+            --background: #F8FAFC;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--background);
+        }
+        
+        .slide {
+            display: none;
+            min-height: 100vh;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .slide.active {
+            display: block;
+            opacity: 1;
+        }
+        
+        .slide-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .card {
+            background: var(--background);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .price-tag {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+        
+        .feature-list {
+            margin: 1rem 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+            gap: 0.5rem;
+        }
+        
+        .nav-buttons {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: var(--primary);
+            color: white;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        button:hover {
+            background: #357ABD;
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .slide-number {
+            padding: 0.5rem 1rem;
+            background: var(--background);
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Introduction -->
+        <div class="slide active" id="slide1">
+            <div class="slide-content">
+                <h1>Grow Your Fitness Business with Strategic Email Marketing</h1>
+                <div class="grid">
+                    <div class="card">
+                        <i class="fas fa-bullseye fa-3x" style="color: var(--primary)"></i>
+                        <h2>Targeted Campaigns</h2>
+                        <p>Reach the right audience with perfectly crafted messages that convert prospects into loyal clients.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-chart-line fa-3x" style="color: var(--secondary)"></i>
+                        <h2>Measurable Results</h2>
+                        <p>Track your success with detailed analytics and optimize your campaigns for maximum ROI.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-clock fa-3x" style="color: var(--accent)"></i>
+                        <h2>Save Time</h2>
+                        <p>Focus on what you do best - training clients - while we handle your email marketing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Services -->
+        <div class="slide" id="slide2">
+            <div class="slide-content">
+                <h1>Our Service Packages</h1>
+                <div class="grid">
+                    <div class="card">
+                        <h2>One-Time Campaign</h2>
+                        <div class="price-tag">$1,200</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                4-6 Professional Emails
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                Basic Strategy
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                Self-Managed
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>Promotion Campaign</h2>
+                        <div class="price-tag">$3,000</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                Full Email Sequence
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                Landing Page Design
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                Campaign Management
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>3-Month Partnership</h2>
+                        <div class="price-tag">$7,500/month</div>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                Multiple Campaigns
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                Full Service Support
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check"></i>
+                                Regular Reporting
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Perfect For -->
+        <div class="slide" id="slide3">
+            <div class="slide-content">
+                <h1>Perfect For Fitness Professionals</h1>
+                <div class="grid">
+                    <div class="card">
+                        <h2>Gym Owners</h2>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <i class="fas fa-dumbbell"></i>
+                                Increase membership sign-ups
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                Promote special programs
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-heart"></i>
+                                Improve client retention
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>Personal Trainers</h2>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <i class="fas fa-users"></i>
+                                Build your client base
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-laptop"></i>
+                                Launch online programs
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-star"></i>
+                                Grow your personal brand
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-buttons">
+            <button onclick="prevSlide()" id="prevBtn" disabled>Previous</button>
+            <span class="slide-number">1 / 3</span>
+            <button onclick="nextSlide()" id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 3;
+
+        function updateSlide() {
+            // Hide all slides
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            // Show current slide
+            document.getElementById(`slide${currentSlide}`).classList.add('active');
+            
+            // Update buttons
+            document.getElementById('prevBtn').disabled = currentSlide === 1;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides;
+            
+            // Update slide number
+            document.querySelector('.slide-number').textContent = `${currentSlide} / ${totalSlides}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        // Optional: Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>
